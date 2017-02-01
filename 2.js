@@ -1,7 +1,9 @@
-//function that takes an argument and return it
+// binary functions add and mul that takes two numbers and return their sum and product
 
-var identity = function (x) {
-  return x
+var add = function (a, b) {
+  return a + b
 }
 
-console.log(identity(3))
+var mul = function (a, b) {
+  return a * b
+}

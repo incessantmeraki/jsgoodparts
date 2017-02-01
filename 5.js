@@ -1,9 +1,16 @@
-//function that adds from two invocations
+//function that takes a binary function and makes it callable with two invocations
 
-var addf = function (x) {
-  return function (y) {
-    return x+y
+var applyf = function (bin) {
+  return function (x)  {
+    return function (y) {
+      return  bin(x,y)
+    }
   }
 }
 
+function add(x,y) {
+  return x + y
+}
+
+addf = applyf(add)
 console.log(addf(3) (4))

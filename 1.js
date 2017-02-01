@@ -1,9 +1,7 @@
-// what is x?
+//function that takes an argument and return it
 
-function funky(o) {
-  o = null;
+var identity = function (x) {
+  return x
 }
 
-var x = []
-funky(x)
-console.log(x)
+console.log(identity(3))

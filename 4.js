@@ -1,11 +1,9 @@
-// function that takes an argument and returns a function that returns the argument
+//function that adds from two invocations
 
-var identity = function (x) {
-  return function () {
-    return x
+var addf = function (x) {
+  return function (y) {
+    return x+y
   }
 }
 
-id = identity(3)
-console.log(id())
-
+console.log(addf(3) (4))
